@@ -22,6 +22,7 @@ function MyForm({ onSubmit }: MyFormProps) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    onSubmit(form);
     setForm({
       name: "",
       description: "",
